@@ -23,6 +23,7 @@ import Head from 'next/head';
 import { easeInOut, motion } from "framer-motion";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const Contact = () => {

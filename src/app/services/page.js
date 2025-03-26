@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaHandshake, FaCheckCircle, FaQuoteLeft, FaPhone } from 'react-icons/fa';
+import Image from "next/image";
   
 const services = [
   { title: 'Custom Fabrication', description: 'Precision metal and machine fabrication tailored to your needs.' },
