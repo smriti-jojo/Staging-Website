@@ -55,7 +55,7 @@ const Home = () => {
       
       {/* Navbar */}
       <header className="bg-[#141414] p-5 flex justify-between items-center shadow-lg fixed w-full top-0 z-50">
-        <img src="/company_logo.png" className='w-[100px]'/>
+        <Image src="/company_logo.png" className='w-[100px]' alt='image'/>
         <nav className="flex space-x-10">
          
         <Link href="/" className="hover:text-gray-400 transition">Home</Link>
@@ -130,17 +130,17 @@ const Home = () => {
         <div className='flex gap-[5%] px-5'>
         <div className="mt-8 max-w-xl mx-auto bg-[#3A3A3A] p-6 rounded-lg">
           <FaQuoteLeft className="text-4xl mx-auto text-gray-500" />
-          <p className="mt-4 italic">"Krishna Steel exceeded our expectations with their top-quality services."</p>
+          <p className="mt-4 italic">&quot;Krishna Steel exceeded our expectations with their top-quality services.&quot;</p>
           <h4 className="mt-4 font-semibold">- garvit, CEO</h4>
           </div>
           <div className="mt-8 max-w-xl mx-auto bg-[#3A3A3A] p-6 rounded-lg">
           <FaQuoteLeft className="text-4xl mx-auto text-gray-500" />
-          <p className="mt-4 italic">"Krishna Steel exceeded our expectations with their top-quality services."</p>
+          <p className="mt-4 italic">&quot;Krishna Steel exceeded our expectations with their top-quality services.&quot;</p>
           <h4 className="mt-4 font-semibold">-smriti, CEO</h4>
           </div>
           <div className="mt-8 max-w-xl mx-auto bg-[#3A3A3A] p-6 rounded-lg">
           <FaQuoteLeft className="text-4xl mx-auto text-gray-500" />
-          <p className="mt-4 italic">"Krishna Steel exceeded our expectations with their top-quality services."</p>
+          <p className="mt-4 italic">&quot;Krishna Steel exceeded our expectations with their top-quality services.&quot;</p>
           <h4 className="mt-4 font-semibold">- jojo, CEO</h4>
           </div>
         </div>
@@ -181,7 +181,7 @@ const Home = () => {
       </div> */}
       <div className='flex  flex-wrap gap-15'>
       {partners.map((image, index) => (
-         <img src={image.logo}  className='w-[12%] h-20 bg-amber-200 rounded-md' key={index} />))}
+         <Image src={image.logo}  className='w-[12%] h-20 bg-amber-200 rounded-md' key={index}  alt='image'/>))}
       </div>
       
 

@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <div>
       <header className="bg-[#141414] p-5 flex justify-between items-center shadow-lg fixed w-full top-0 z-50">
-    <img src="/company_logo.png" className='w-[100px]'/>
+    <Image src="/company_logo.png" className='w-[100px]' alt='image'/>
         <nav className="flex space-x-6">
           
           <Link href="/" className="hover:text-gray-400 transition text-white">Home</Link>
