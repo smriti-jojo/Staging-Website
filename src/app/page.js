@@ -103,9 +103,9 @@ const Home = () => {
               {/* <FaCheckCircle className="text-4xl mx-auto text-blue-400" /> */}
                {/* <h3 className="text-2xl font-semibold">{service}</h3>
                <p className="text-gray-400 mt-3">High-quality {service.toLowerCase()} solutions tailored to your needs.</p> */}
-           <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
+           <h3 className="text-2xl font-semibold mb-3" key={index}>{service.title}</h3>
            
-            {index==0?service.content:<div><p>{service.content}</p> <a href='/' className="text-blue-700 underline">See More...</a></div>}
+            {index==0?service.content:<div ><p key={index} >{service.content}</p> <Link href='/' className="text-blue-700 underline">See More...</Link></div>}
              </motion.div>
            ))}
       </div>     </section>
@@ -181,7 +181,7 @@ const Home = () => {
       </div> */}
       <div className='flex  flex-wrap gap-15'>
       {partners.map((image, index) => (
-         <img src={image.logo} alt={`slide ${index + 1}`}  className='w-[12%] h-20 bg-amber-200 rounded-md' />))}
+         <img src={image.logo}  className='w-[12%] h-20 bg-amber-200 rounded-md' key={index} />))}
       </div>
       
 
