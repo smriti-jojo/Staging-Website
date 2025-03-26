@@ -55,7 +55,7 @@ const Home = () => {
       
       {/* Navbar */}
       <header className="bg-[#141414] p-5 flex justify-between items-center shadow-lg fixed w-full top-0 z-50">
-        <Image src="/company_logo.png" className='w-[100px]' alt='image'/>
+        <Image src="/company_logo.png"  alt='image' width={100} height={100}/>
         <nav className="flex space-x-10">
          
         <Link href="/" className="hover:text-gray-400 transition">Home</Link>
@@ -181,7 +181,7 @@ const Home = () => {
       </div> */}
       <div className='flex  flex-wrap gap-15'>
       {partners.map((image, index) => (
-         <Image src={image.logo}  className='w-[12%] h-20 bg-amber-200 rounded-md' key={index}  alt='image'/>))}
+         <Image src={image.logo} width={150} height={30} className=' bg-amber-200 rounded-md' key={index}  alt='image'/>))}
       </div>
       
 

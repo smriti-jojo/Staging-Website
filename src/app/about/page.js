@@ -219,7 +219,7 @@ const About = () => {
   return (
     <div>
     <header className="bg-[#141414] p-5 flex justify-between items-center shadow-lg fixed w-full top-0 z-50">
-    <Image src="/company_logo.png" className='w-[100px]' alt="image"/>
+    <Image src="/company_logo.png"  alt="image" width={100} height={100}/>
         <nav className="flex space-x-6">
           
           <Link href="/" className="hover:text-gray-400 transition text-white">Home</Link>

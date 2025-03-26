@@ -46,7 +46,7 @@ const Contact = () => {
         transition={{ duration: 1.5 ,ease:"easeInOut"}}
       > */}
       <header className="bg-[#141414] p-5 flex justify-between items-center shadow-lg fixed w-full top-0 z-50">
-      <Image src="/company_logo.png" className='w-[100px]' alt='image'/>
+      <Image src="/company_logo.png" width={100} height={100} alt='image'/>
               <nav className="flex space-x-6">
                
               <Link href="/" className="hover:text-gray-400 transition">Home</Link>
