@@ -1,5 +1,4 @@
 # Krishna-Steel-Pvt-Ltd
-#Project Overview
 Krishna Steel is a freelancing project developed to enhance the digital presence of a steel manufacturing business. The project involves building a user-friendly and efficient platform to showcase products, services, and company details while optimizing the user experience.
 
 Features
