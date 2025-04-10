@@ -8,7 +8,7 @@ import {React,useState} from "react";
 
 
 
-const page = () => {
+const Page =()=> {
   const [activeTab, setActiveTab] = useState(0);
 
   
@@ -307,4 +307,4 @@ our team is here to help you build the skills necessary to succeed.</p>
   )
 }
 
-export default page
+export default Page

@@ -8,7 +8,7 @@ import React from "react";
 import { useState } from 'react';
 
 
-const page = () => {
+const Page = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -313,4 +313,4 @@ hesitate to contact us. Our team is ready to collaborate with you on your next v
   )
 }
 
-export default page
+export default Page

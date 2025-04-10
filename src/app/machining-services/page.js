@@ -8,7 +8,7 @@ import React from "react";
 import { useState } from 'react';
 
 
-const page = () => {
+const Page = () => {
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
   
@@ -75,24 +75,8 @@ const page = () => {
       >
      
       </motion.section> */}
-<div className="pt-[10%] px-[5%]">
-    <nav aria-label="breadcrumb">
-      <ol className="flex space-x-2">
-        <li>
-          <a href="/" className="hover:text-gray-300">Home</a>
-        </li>
-        <li>
-          <span className="text-gray-300 font-bold">&gt;</span>
-        </li>
-        
-        <li>
-          <span className="text-gray-300">Machining Services</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
-  
-      <section className=' flex-col items-center pt-[3%]  px-[5%]  w-full '>
+
+      <section className=' flex-col items-center pt-[12%]  px-[5%]  w-full '>
         <h1 className='text-3xl pb-5 font-bold flex justify-center'>Machine Shop Description</h1>
         <p className='text-xl '>Welcome to the <b>Machine Shop</b> at <b>KSC Krishna Group</b> , where precision, quality, and
 craftsmanship come together to deliver superior results. Our advanced machine shop is
@@ -229,4 +213,4 @@ machining project.</p>
   )
 }
 
-export default page
+export default Page

@@ -18,16 +18,7 @@ import { useRouter } from 'next/navigation';
 const Home = () => {
   
   const router=useRouter();
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3,
-  //    arrows: true,
-    
-    
-  // };
+ 
   const settings = {
     // dots: true,
     infinite: true,
@@ -69,7 +60,7 @@ const Home = () => {
 
   ];
 
-  const services=[{
+  const InhouseServices=[{
     title:'CNC Milling Machines',
     logo:'/services-home/CNC_Milling_Machines.jpg',
      desc:'High-precision machines that allow us to manufacture complex parts with intricate geometries and tight tolerances'
@@ -134,6 +125,25 @@ const Home = () => {
       router.push('/contact');
       
     };
+
+    const services=[
+      {
+        title:'Raw Material Supply',
+        logo:'/services_home/Lathes',
+      
+      },
+      {
+        title:'Machining Services',
+        logo:'/services_home/Lathes',
+    
+      },
+      {
+        title:'Fabrication Services',
+        logo:'/services_home/Lathes',
+         
+      },
+     
+    ]
   
   return (
     <div className="bg-[#1E1E1E] text-white font-sans">
@@ -250,18 +260,18 @@ meet the unique demands of our clients across a variety of industries.
   {services.map((item,index)=>(
     <motion.div 
                   key={index} 
-                  className="relative  bg-white/10 backdrop-blur-lg rounded-xl p-8 shadow-lg text-center border border-white/20 hover:scale-105 transition-transform duration-500"
+                  className="relative  bg-white/10 backdrop-blur-lg rounded-xl  shadow-lg text-center border border-white/20 hover:scale-105 transition-transform duration-500"
                   initial={{ opacity: 0, y: 50 }} 
                   whileInView={{ opacity: 1, y: 0 }} 
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                 >
-    <div className='w-[550px] h-[450px]  border-2 border-white flex-col justify-between  '>
+    <div className='w-[500px] h-[350px]  border-2 border-white flex-col justify-between  '>
     <div className='flex justify-center py-[1rem] '>
-    <img src={item.logo} alt="img" width={'70%'} height={'40%'} />
+    <img src={item.logo} alt="img" width={'30%'} height={'20%'} />
     </div>
     <h1 className='flex justify-center font-bold '>{item.title}</h1>
-    <p className='px-[2rem] pb-[1rem]'>{item.desc}</p>
+   
     
   </div>
   </motion.div>
@@ -338,7 +348,7 @@ meet the unique demands of our clients across a variety of industries.
 <div className=" relative max-w-full px-[2.5%] bg-[#3A3A3A] mt-7">
   <Slider  {...MachineSetting}>
     
-      {services.map((item,index)=>(
+      {InhouseServices.map((item,index)=>(
     <div key={index} className=" w-full  px-5">
      <div key={index} className='flex-col items-center justify-center w-full '>
        <img src={item.logo} alt={`slide ${index + 1}`} style={{ width: '100%', height: 'auto' }} />

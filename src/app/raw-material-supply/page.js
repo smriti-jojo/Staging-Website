@@ -72,22 +72,7 @@ return (
       </nav>
     </header>
 
-    <div className="absolute top-[20%] left-[5%] text-white z-100">
-    <nav aria-label="breadcrumb">
-      <ol className="flex space-x-2">
-        <li>
-          <a href="/" className="hover:text-gray-300">Home</a>
-        </li>
-        <li>
-          <span className="text-gray-300 font-bold">&gt;</span>
-        </li>
-        
-        <li>
-          <span className="text-gray-300">Raw Material Supply</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
+   
     
             <section className='px-[5%] flex gap-[5%] pt-[12%]  h-screen'>
             <div className='border-3 border-white w-[50%] h-auto '>

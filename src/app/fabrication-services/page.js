@@ -8,7 +8,7 @@ import React from "react";
 import { useState } from 'react';
 
 
-const page = () => {
+const Page = () => {
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
   
@@ -259,4 +259,4 @@ project.</p>
   )
 }
 
-export default page
+export default Page
